@@ -15,6 +15,11 @@ allow easier extensibility of your Application.
 A typical LoopBack component is an [npm](https://www.npmjs.com) package
 exporting a Component class which can be added to your application.
 
+```sh
+npm install --save @loopback/authentication
+npm install @types/passport
+```
+
 ```ts
 import {RestApplication} from '@loopback/rest';
 import {AuthenticationComponent} from '@loopback/authentication';
