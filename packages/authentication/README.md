@@ -88,11 +88,11 @@ export class MyAuthStrategyProvider implements Provider<Strategy | undefined> {
     }
   }
 
-  verify(
+  verify = (
     username: string,
     password: string,
     cb: (err: Error | null, user?: UserProfile | false) => void,
-  ) {
+  ) => {
     // find user by name & password
     // call cb(null, false) when user not found
     // call cb(null, user) when user is authenticated
